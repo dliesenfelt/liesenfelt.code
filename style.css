@@ -1,5 +1,5 @@
 body {
-   background-image: url(assets/89953.jpg);
+   background-image: url(assets/19449742.jpg);
    background-size: cover;
 }
 
@@ -25,12 +25,12 @@ td {
     padding: 5px;
     font-weight: bold;
     font-family: sans-serif;
+    background: linear-gradient(to left, rgba(87, 86, 86, 0.2), rgba(255, 255, 255, 0.2));
 }
 
 footer {
     text-align: center;
     padding: 3px;
-    background-color: DarkSalmon;
-    color: white;
+    background: linear-gradient(to left, rgba(87, 86, 86, 0.5), rgba(255, 255, 255, 0.5));
     border: 2px solid black;
   }
