@@ -15,75 +15,185 @@
         </H1>
         <hr>
         <div>
-            <h1 id="cryptoHeader">Crypto Assets</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Ethereum</th>
-                        <th>Cardano</th>
-                        <th>Crypto.Com Coin</th>
-                        <th>IoTeX</th>
-                        <th>Cartesi</th>
-                        <th>Algorand</th>
-                        <th>Shiba Inu</th>
-                        <th>PlayDap</th>
-                        <th>Jasmy</th>
-                        <th>Storj</th>
-                        <th>NKN</th>
-                        <th>Tribe</th>
-                        <th>Enjin Coin</th>
-                        <th>Decentraland</th>
-                        <th>Civic</th>
-                        <th>iExec RLC</th>
-                        <th>Origin Token</th>
-                        <th>Skale</th>
-                        <th>Fetch.ai</th>
-                        <th>0x</th>
-                        <th>Basic Attention Coin</th>
-                        <th>Celo</th>
-                        <th>Rally</th>
-                        <th>Ren</th>
-                        <th>TrueFi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="$ETH">0</td>
-                        <td id="$ADA">0</td>
-                        <td id="$CRO">0</td>
-                        <td id="$IOTX">0</td>
-                        <td id="$CTSI">0</td>
-                        <td id="$ALGO">0</td>
-                        <td id="$SHIB">0</td>
-                        <td id="$PLA">0</td>
-                        <td id="$JASMY">0</td>
-                        <td id="$STORJ">0</td>
-                        <td id="$NKN">0</td>
-                        <td id="$TRIBE">0</td>
-                        <td id="$ENJ">0</td>
-                        <td id="$MANA">0</td>
-                        <td id="$CVC">0</td>
-                        <td id="$RLC">0</td>
-                        <td id="$OGN">0</td>
-                        <td id="$SKL">0</td>
-                        <td id="$FET">0</td>
-                        <td id="$ZRX">0</td>
-                        <td id="$BAT">0</td>
-                        <td id="$CGLD">0</td>
-                        <td id="$RLY">0</td>
-                        <td id="$REN">0</td>
-                        <td id="$TRU">0</td>
-                        
-                    </tr>
-                </tbody>
-            </table>
-            <div id="portfolioBalanceParent">
-            <p>Porfolio Balance</p>
-            <p id="portfolioBalance">0</p>
+            <div class="cryptoPortfolio">
+                <h2>Crypto Porfolio</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Coin
+                            </th>
+                            <th>
+                                Value $USD
+                            </th>
+                            <th>
+                                Price $USD
+                            </th>
+                            <th>
+                                Quantity
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ETH<img src="assets/CryptoIcons/ETHICON.png"></td>
+                            <td id="ETH">0</td>
+                            <td id="$eth">0</td>
+                            <td id="Qeth">0</td>
+                        </tr>
+                        <tr>
+                            <td>ADA<img src="assets/CryptoIcons/ADAICON.png"></td>
+                            <td id="ADA">0</td>
+                            <td id="$ada">0</td>
+                            <td id="Qada">0</td>
+                        </tr>
+                        <tr>
+                            <td>CRO<img src="assets/CryptoIcons/CROICON.png"></td>
+                            <td id="CRO">0</td>
+                            <td id="$cro">0</td>
+                            <td id="Qcro">0</td>
+                        </tr>
+                        <tr>
+                            <td>IOTX<img src="assets/CryptoIcons/IOTXICON.png"></td>
+                            <td id="IOTX">0</td>
+                            <td id="$iotx">0</td>
+                            <td id="Qiotx">100</td>
+                        </tr>
+                        <tr>
+                            <td>CTSI<img src="assets/CryptoIcons/CTSIICON.png"></td>
+                            <td id="CTSI">0</td>
+                            <td id="$ctsi">0</td>
+                            <td id="Qctsi">0</td>
+                        </tr>
+                        <tr>
+                            <td>ALGO<img src="assets/CryptoIcons/ALGOICON.png"></td>
+                            <td id="ALGO">0</td>
+                            <td id="$algo">0</td>
+                            <td id="Qalgo">0</td>
+                        </tr>
+                        <tr>
+                            <td>SHIB<img src="assets/CryptoIcons/SHIBICON.png"></td>
+                            <td id="SHIB">0</td>
+                            <td id="$shib">0</td>
+                            <td id="Qshib">0</td>
+                        </tr>
+                        <tr>
+                            <td>STORJ<img src="assets/CryptoIcons/STORJICON.png"></td>
+                            <td id="STORJ">0</td>
+                            <td id="$storj">0</td>
+                            <td id="Qstorj">0</td>
+                        </tr>
+                        <tr>
+                            <td>PLA<img src="assets/CryptoIcons/PLAICON.png"></td>
+                            <td id="PLA">0</td>
+                            <td id="$pla">0</td>
+                            <td id="Qpla">0</td>
+                        </tr>
+                        <tr>
+                            <td>JASMY<img src="assets/CryptoIcons/JASMYICON.png"></td>
+                            <td id="JASMY">0</td>
+                            <td id="$jasmy">0</td>
+                            <td id="Qjasmy">0</td>
+                        </tr>
+                        <tr>
+                            <td>ENJ<img src="assets/CryptoIcons/ENJICON.png"></td>
+                            <td id="ENJ">0</td>
+                            <td id="$enj">0</td>
+                            <td id="Qenj">0</td>
+                        </tr>
+                        <tr>
+                            <td>NKN<img src="assets/CryptoIcons/NKNICON.png"></td>
+                            <td id="NKN">0</td>
+                            <td id="$nkn">0</td>
+                            <td id="Qnkn">0</td>
+                        </tr>
+                        <tr>
+                            <td>TRIBE<img src="assets/CryptoIcons/TRIBEICON.png"></td>
+                            <td id="TRIBE">0</td>
+                            <td id="$tribe">0</td>
+                            <td id="Qtribe">0</td>
+                        </tr>
+                        <tr>
+                            <td>MANA<img src="assets/CryptoIcons/MANAICON.png"></td>
+                            <td id="MANA">0</td>
+                            <td id="$mana">0</td>
+                            <td id="Qmana">0</td>
+                        </tr>
+                        <tr>
+                            <td>CVC<img src="assets/CryptoIcons/CVCICON.png"></td>
+                            <td id="CVC">0</td>
+                            <td id="$cvc">0</td>
+                            <td id="Qcvc">0</td>
+                        </tr>
+                        <tr>
+                            <td>OGN<img src="assets/CryptoIcons/OGNICON.png"></td>
+                            <td id="OGN">0</td>
+                            <td id="$ogn">0</td>
+                            <td id="Qogn">0</td>
+                        </tr>
+                        <tr>
+                            <td>RLC<img src="assets/CryptoIcons/RLCICON.png"></td>
+                            <td id="RLC">0</td>
+                            <td id="$rlc">0</td>
+                            <td id="Qrlc">0</td>
+                        </tr>
+                        <tr>
+                            <td>BAT<img src="assets/CryptoIcons/BATICON.png"></td>
+                            <td id="BAT">0</td>
+                            <td id="$bat">0</td>
+                            <td id="Qbat">0</td>
+                        </tr>
+                        <tr>
+                            <td>ZRX<img src="assets/CryptoIcons/ZRXICON.png"></td>
+                            <td id="ZRX">0</td>
+                            <td id="$zrx">0</td>
+                            <td id="Qzrx">0</td>
+                        </tr>
+                        <tr>
+                            <td>SKL<img src="assets/CryptoIcons/SKLICON.png"></td>
+                            <td id="SKL">0</td>
+                            <td id="$skl">0</td>
+                            <td id="Qskl">0</td>
+                        </tr>
+                        <tr>
+                            <td>FET<img src="assets/CryptoIcons/FETICON.png"></td>
+                            <td id="FET">0</td>
+                            <td id="$fet">0</td>
+                            <td id="Qfet">0</td>
+                        </tr>
+                        <tr>
+                            <td>CGLD<img src="assets/CryptoIcons/CGLDICON.png"></td>
+                            <td id="CGLD">0</td>
+                            <td id="$cgld">0</td>
+                            <td id="Qcgld">0</td>
+                        </tr>
+                        <tr>
+                            <td>RLY<img src="assets/CryptoIcons/RLYICON.png"></td>
+                            <td id="RLY">0</td>
+                            <td id="$rly">0</td>
+                            <td id="Qrly">0</td>
+                        </tr>
+                        <tr>
+                            <td>REN<img src="assets/CryptoIcons/RENICON.png"></td>
+                            <td id="REN">0</td>
+                            <td id="$ren">0</td>
+                            <td id="Qren">0</td>
+                        </tr>
+                        <tr>
+                            <td>TRU<img src="assets/CryptoIcons/TRUICON.png"></td>
+                            <td id="TRU">0</td>
+                            <td id="$tru">0</td>
+                            <td id="Qtru">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="totalParent">
+                <h2>Total Value<p id="totalValue"></p></h2>
+                </div>
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 <hr>
 <footer>
