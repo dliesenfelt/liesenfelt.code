@@ -1,6 +1,6 @@
 //Quantity of each coin in the porfolio
 var Qeth = 1.24133539;
-var Qada = 287;
+var Qada = 257.783247;
 var Qcro = 241.71956849;
 var Qiotx = 298.96954546;
 var Qctsi = 22.83121849;
@@ -27,7 +27,7 @@ var Qtru = 1.6448038;
 
 //price as of start (11/20/21 2am PST) of each coin
 var $eth = 4297.54;
-var $ada = 1.87;
+var $ada = 1.89;
 var $cro = 0.57;
 var $iotx = 0.27;
 var $ctsi = 1.03;
@@ -83,105 +83,104 @@ var tru = (Qtru*$tru);
 var totalValue = (eth+ada+cro+iotx+ctsi+algo+shib+pla+storj+nkn+tribe+enj+mana+cvc+rlc+ogn+skl+fet+zrx+bat+cgld+rly+ren+tru).toFixed(2);
 document.getElementById('totalValue').textContent = totalValue;
 
-//
-document.getElementById('ETH').textContent = eth
+//ETH
+document.getElementById('ETH').textContent = (Math.round(eth * 100) / 100).toFixed(2)
 document.getElementById('$eth').textContent = $eth
 document.getElementById('Qeth').textContent = Qeth
-//
-document.getElementById('ADA').textContent = ada
+//ADA
+document.getElementById('ADA').textContent = (Math.round(ada * 100) / 100).toFixed(2)
 document.getElementById('$ada').textContent = $ada
 document.getElementById('Qada').textContent = Qada
-console.log(ada,Qada,$ada)
-//
-document.getElementById('CRO').textContent = cro
+//CRO
+document.getElementById('CRO').textContent = (Math.round(cro * 100) / 100).toFixed(2)
 document.getElementById('$cro').textContent = $cro
 document.getElementById('Qcro').textContent = Qcro
-//
-document.getElementById('IOTX').textContent = iotx
+//IOTX
+document.getElementById('IOTX').textContent = (Math.round(iotx * 100) / 100).toFixed(2)
 document.getElementById('$iotx').textContent = $iotx
 document.getElementById('Qiotx').textContent = Qiotx
-//
-document.getElementById('CTSI').textContent = ctsi
+//CTSI
+document.getElementById('CTSI').textContent = (Math.round(ctsi * 100) / 100).toFixed(2)
 document.getElementById('$ctsi').textContent = $ctsi
 document.getElementById('Qctsi').textContent = Qctsi
-//
-document.getElementById('ALGO').textContent = algo
+//ALGO
+document.getElementById('ALGO').textContent = (Math.round(algo * 100) / 100).toFixed(2)
 document.getElementById('$algo').textContent = $algo
 document.getElementById('Qalgo').textContent = Qalgo
-//
-document.getElementById('SHIB').textContent = shib
+//SHIB
+document.getElementById('SHIB').textContent = (Math.round(shib * 100) / 100).toFixed(2)
 document.getElementById('$shib').textContent = $shib
 document.getElementById('Qshib').textContent = Qshib
-//
-document.getElementById('PLA').textContent = pla
+//PLA
+document.getElementById('PLA').textContent = (Math.round(pla * 100) / 100).toFixed(2)
 document.getElementById('$pla').textContent = $pla
 document.getElementById('Qpla').textContent = Qpla
-//
-document.getElementById('JASMY').textContent = jasmy
+//JASMY
+document.getElementById('JASMY').textContent = (Math.round(jasmy * 100) / 100).toFixed(2)
 document.getElementById('$jasmy').textContent = $jasmy
 document.getElementById('Qjasmy').textContent = Qjasmy
-//
-document.getElementById('STORJ').textContent = storj
+//STORJ
+document.getElementById('STORJ').textContent = (Math.round(storj * 100) / 100).toFixed(2)
 document.getElementById('$storj').textContent = $storj
 document.getElementById('Qstorj').textContent = Qstorj
-//
-document.getElementById('NKN').textContent = nkn
+//NKN
+document.getElementById('NKN').textContent = (Math.round(nkn * 100) / 100).toFixed(2)
 document.getElementById('$nkn').textContent = $nkn
 document.getElementById('Qnkn').textContent = Qnkn
-//
-document.getElementById('TRIBE').textContent = tribe
+//TRIBE
+document.getElementById('TRIBE').textContent = (Math.round(tribe * 100) / 100).toFixed(2)
 document.getElementById('$tribe').textContent = $tribe
 document.getElementById('Qtribe').textContent = Qtribe
-//
-document.getElementById('ENJ').textContent = enj
+//ENJ
+document.getElementById('ENJ').textContent = (Math.round(enj * 100) / 100).toFixed(2)
 document.getElementById('$enj').textContent = $enj
 document.getElementById('Qenj').textContent = Qenj
-//
-document.getElementById('MANA').textContent = mana
+//MANA
+document.getElementById('MANA').textContent = (Math.round(mana * 100) / 100).toFixed(2)
 document.getElementById('$mana').textContent = $mana
 document.getElementById('Qmana').textContent = Qmana
-//
-document.getElementById('CVC').textContent = cvc
+//CVC
+document.getElementById('CVC').textContent = (Math.round(cvc * 100) / 100).toFixed(2)
 document.getElementById('$cvc').textContent = $cvc
 document.getElementById('Qcvc').textContent = Qcvc
-//
-document.getElementById('RLC').textContent = rlc
+//RLC
+document.getElementById('RLC').textContent = (Math.round(rlc * 100) / 100).toFixed(2)
 document.getElementById('$rlc').textContent = $rlc
 document.getElementById('Qrlc').textContent = Qrlc
-//
-document.getElementById('OGN').textContent = ogn
+//OGN
+document.getElementById('OGN').textContent = (Math.round(ogn * 100) / 100).toFixed(2)
 document.getElementById('$ogn').textContent = $ogn
 document.getElementById('Qogn').textContent = Qogn
-//
-document.getElementById('SKL').textContent = skl
+//SKL
+document.getElementById('SKL').textContent = (Math.round(skl * 100) / 100).toFixed(2)
 document.getElementById('$skl').textContent = $skl
 document.getElementById('Qskl').textContent = Qskl
-//
-document.getElementById('FET').textContent = fet
+//FET
+document.getElementById('FET').textContent = (Math.round(fet * 100) / 100).toFixed(2)
 document.getElementById('$fet').textContent = $fet
 document.getElementById('Qfet').textContent = Qfet
-//
-document.getElementById('ZRX').textContent = zrx
+//ZRX
+document.getElementById('ZRX').textContent = (Math.round(zrx * 100) / 100).toFixed(2)
 document.getElementById('$zrx').textContent = $zrx
 document.getElementById('Qzrx').textContent = Qzrx
-//
-document.getElementById('BAT').textContent = bat
+//BAT
+document.getElementById('BAT').textContent = (Math.round(bat * 100) / 100).toFixed(2)
 document.getElementById('$bat').textContent = $bat
 document.getElementById('Qbat').textContent = Qbat
-//
-document.getElementById('CGLD').textContent = cgld
+//CGLD
+document.getElementById('CGLD').textContent = (Math.round(cgld * 100) / 100).toFixed(2)
 document.getElementById('$cgld').textContent = $cgld
 document.getElementById('Qcgld').textContent = Qcgld
-//
-document.getElementById('RLY').textContent = rly
+//RLY
+document.getElementById('RLY').textContent = (Math.round(rly * 100) / 100).toFixed(2)
 document.getElementById('$rly').textContent = $rly
 document.getElementById('Qrly').textContent = Qrly
-//
-document.getElementById('REN').textContent = ren
+//REN
+document.getElementById('REN').textContent = (Math.round(ren * 100) / 100).toFixed(2)
 document.getElementById('$ren').textContent = $ren
 document.getElementById('Qren').textContent = Qren
-//
-document.getElementById('TRU').textContent = tru
+//TRU
+document.getElementById('TRU').textContent = (Math.round(tru * 100) / 100).toFixed(2)
 document.getElementById('$tru').textContent = $tru
 document.getElementById('Qtru').textContent = Qtru
 

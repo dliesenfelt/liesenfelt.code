@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIESENFELT.CODE</title>
     <link rel="stylesheet" href="style.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
 </head>
 <body>
     <main>
-        <H1 id="header">
-            <span class="higher">LIESENFELT</span>
-            <span class="lower">.CODE</span>
-        </H1>
-        <hr>
-        <div>
-            <div class="cryptoPortfolio">
-                <h2>Crypto Porfolio</h2>
+        <header class="topBar">
+            <img class="topBarImg" src="assets/HeaderLogo.jpg" alt="">
+            <button id="about">About Me</button>
+            <button id="dogPics">Dog Pictures</button>
+        </header>
+        <div class="porfolio">
                 <table>
+                    <div class="portfolioHeader">
+                    <h2>Crypto Porfolio</h2>
+                    </div>
                     <thead>
                         <tr>
                             <th>
@@ -190,7 +194,33 @@
                 <div class="totalParent">
                 <h2>Total Value<p id="totalValue"></p></h2>
                 </div>
-            </div>
+        </div>
+        <div class="chartParent">
+            <!--this is a test chart-->
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            <script>
+            var xValues = [1,2,3,4,5,6,7];
+            var yValues = [5000,4500,3000,5000,10000];
+
+            new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "black",
+                borderColor: "black",
+                data: yValues
+            }]
+            },
+                options: {
+                legend: {display: false},
+                scales: {
+                yAxes: [{ticks: {min: 0, max:50000}}],
+                }}
+            });
+            </script>
         </div>
     </main>
     <script src="index.js"></script>

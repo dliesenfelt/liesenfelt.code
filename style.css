@@ -1,21 +1,68 @@
 /*change background to a dark concrete like the one on desktop*/
 body {
-   background-image: url(assets/19449742.jpg);
+   background-image: url(assets/black-brick-wall-textured-background.jpg);
    background-size: cover;
+   margin-left: 0;
+   margin-right: 0;
+   margin-bottom: 0;
 }
 
-h1 {
-    font-family: 'Times New Roman', Times, serif;
+.topBar {
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    
+    top: 0;
+    
 }
 
-.lower {
-    position: relative;
-    top: 3px;
+.topBarImg {
+    float: left;
+    height: 50px;
+    width: 140px;
 }
 
-.higher {
-    position: relative;
-    top: -3px;
+button {
+    margin: 0;
+    padding: 0;
+    border: 2px solid whitesmoke;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.055);
+    height: 50px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.portfolioHeader {
+    color: white;
+    margin-left: 20px;
+    margin-top: 90px;
+    background: rgb(0, 0, 0) ;
+    height: 60px;
+    width: 455px;
+    text-align: center;
+    font-size: 25px;
+
+    
+}
+
+table, 
+th, 
+td {
+    font-weight: bold;
+    font-family: sans-serif;
+    background: rgba(245, 245, 245, 0.85);
+    text-align: center;
+    color: black;
+    margin-left: 20px;
+    width: 455px;
+    outline: black;
+
 }
 
 img {
@@ -24,18 +71,26 @@ img {
     height: 30px;
 }
 
-table, 
-th, 
-td {
-    border:2px solid black;
-    font-weight: bold;
-    font-family: sans-serif;
-    background: rgba(214, 213, 213, 0.2) ;
+.totalParent{
+    color: black;
+    width: 455px;
+    background: rgba(245, 245, 245, 0.85);
+    margin-left: 20px;
+    text-align: center;
+    
+}
+
+canvas{
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(0, 0, 0);
 }
 
 footer {
-    text-align: center;
-    padding: 3px;
-    background: linear-gradient(to left, rgba(87, 86, 86, 0.5), rgba(255, 255, 255, 0.5));
-    border: 2px solid black;
-  }
+    position:relative;
+    width: 100%;
+    height: 70px;
+    background: rgba(7, 7, 7, 0.856) ;
+    text-align : center;
+    bottom: 0;
+    
+}
