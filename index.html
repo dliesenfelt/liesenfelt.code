@@ -4,231 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIESENFELT.CODE</title>
-    <link rel="stylesheet" href="style.css">
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-    </script>
+    <title>./Liesenfelt.code</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main>
-        <header class="topBar">
-            <img class="topBarImg" src="assets/HeaderLogo.jpg" alt="">
-            <button id="about">About Me</button>
-            <button id="dogPics">Dog Pictures</button>
-        </header>
-        <div class="porfolio">
-                <table>
-                    <div class="portfolioHeader">
-                    <h2>Crypto Porfolio</h2>
-                    </div>
-                    <thead>
-                        <tr>
-                            <th>
-                                Coin
-                            </th>
-                            <th>
-                                Value $USD
-                            </th>
-                            <th>
-                                Price $USD
-                            </th>
-                            <th>
-                                Quantity
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>ETH<img src="assets/CryptoIcons/ETHICON.png"></td>
-                            <td id="ETH">0</td>
-                            <td id="$eth">0</td>
-                            <td id="Qeth">0</td>
-                        </tr>
-                        <tr>
-                            <td>ADA<img src="assets/CryptoIcons/ADAICON.png"></td>
-                            <td id="ADA">0</td>
-                            <td id="$ada">0</td>
-                            <td id="Qada">0</td>
-                        </tr>
-                        <tr>
-                            <td>CRO<img src="assets/CryptoIcons/CROICON.png"></td>
-                            <td id="CRO">0</td>
-                            <td id="$cro">0</td>
-                            <td id="Qcro">0</td>
-                        </tr>
-                        <tr>
-                            <td>IOTX<img src="assets/CryptoIcons/IOTXICON.png"></td>
-                            <td id="IOTX">0</td>
-                            <td id="$iotx">0</td>
-                            <td id="Qiotx">100</td>
-                        </tr>
-                        <tr>
-                            <td>CTSI<img src="assets/CryptoIcons/CTSIICON.png"></td>
-                            <td id="CTSI">0</td>
-                            <td id="$ctsi">0</td>
-                            <td id="Qctsi">0</td>
-                        </tr>
-                        <tr>
-                            <td>ALGO<img src="assets/CryptoIcons/ALGOICON.png"></td>
-                            <td id="ALGO">0</td>
-                            <td id="$algo">0</td>
-                            <td id="Qalgo">0</td>
-                        </tr>
-                        <tr>
-                            <td>SHIB<img src="assets/CryptoIcons/SHIBICON.png"></td>
-                            <td id="SHIB">0</td>
-                            <td id="$shib">0</td>
-                            <td id="Qshib">0</td>
-                        </tr>
-                        <tr>
-                            <td>STORJ<img src="assets/CryptoIcons/STORJICON.png"></td>
-                            <td id="STORJ">0</td>
-                            <td id="$storj">0</td>
-                            <td id="Qstorj">0</td>
-                        </tr>
-                        <tr>
-                            <td>PLA<img src="assets/CryptoIcons/PLAICON.png"></td>
-                            <td id="PLA">0</td>
-                            <td id="$pla">0</td>
-                            <td id="Qpla">0</td>
-                        </tr>
-                        <tr>
-                            <td>JASMY<img src="assets/CryptoIcons/JASMYICON.png"></td>
-                            <td id="JASMY">0</td>
-                            <td id="$jasmy">0</td>
-                            <td id="Qjasmy">0</td>
-                        </tr>
-                        <tr>
-                            <td>ENJ<img src="assets/CryptoIcons/ENJICON.png"></td>
-                            <td id="ENJ">0</td>
-                            <td id="$enj">0</td>
-                            <td id="Qenj">0</td>
-                        </tr>
-                        <tr>
-                            <td>NKN<img src="assets/CryptoIcons/NKNICON.png"></td>
-                            <td id="NKN">0</td>
-                            <td id="$nkn">0</td>
-                            <td id="Qnkn">0</td>
-                        </tr>
-                        <tr>
-                            <td>TRIBE<img src="assets/CryptoIcons/TRIBEICON.png"></td>
-                            <td id="TRIBE">0</td>
-                            <td id="$tribe">0</td>
-                            <td id="Qtribe">0</td>
-                        </tr>
-                        <tr>
-                            <td>MANA<img src="assets/CryptoIcons/MANAICON.png"></td>
-                            <td id="MANA">0</td>
-                            <td id="$mana">0</td>
-                            <td id="Qmana">0</td>
-                        </tr>
-                        <tr>
-                            <td>CVC<img src="assets/CryptoIcons/CVCICON.png"></td>
-                            <td id="CVC">0</td>
-                            <td id="$cvc">0</td>
-                            <td id="Qcvc">0</td>
-                        </tr>
-                        <tr>
-                            <td>OGN<img src="assets/CryptoIcons/OGNICON.png"></td>
-                            <td id="OGN">0</td>
-                            <td id="$ogn">0</td>
-                            <td id="Qogn">0</td>
-                        </tr>
-                        <tr>
-                            <td>RLC<img src="assets/CryptoIcons/RLCICON.png"></td>
-                            <td id="RLC">0</td>
-                            <td id="$rlc">0</td>
-                            <td id="Qrlc">0</td>
-                        </tr>
-                        <tr>
-                            <td>BAT<img src="assets/CryptoIcons/BATICON.png"></td>
-                            <td id="BAT">0</td>
-                            <td id="$bat">0</td>
-                            <td id="Qbat">0</td>
-                        </tr>
-                        <tr>
-                            <td>ZRX<img src="assets/CryptoIcons/ZRXICON.png"></td>
-                            <td id="ZRX">0</td>
-                            <td id="$zrx">0</td>
-                            <td id="Qzrx">0</td>
-                        </tr>
-                        <tr>
-                            <td>SKL<img src="assets/CryptoIcons/SKLICON.png"></td>
-                            <td id="SKL">0</td>
-                            <td id="$skl">0</td>
-                            <td id="Qskl">0</td>
-                        </tr>
-                        <tr>
-                            <td>FET<img src="assets/CryptoIcons/FETICON.png"></td>
-                            <td id="FET">0</td>
-                            <td id="$fet">0</td>
-                            <td id="Qfet">0</td>
-                        </tr>
-                        <tr>
-                            <td>CGLD<img src="assets/CryptoIcons/CGLDICON.png"></td>
-                            <td id="CGLD">0</td>
-                            <td id="$cgld">0</td>
-                            <td id="Qcgld">0</td>
-                        </tr>
-                        <tr>
-                            <td>RLY<img src="assets/CryptoIcons/RLYICON.png"></td>
-                            <td id="RLY">0</td>
-                            <td id="$rly">0</td>
-                            <td id="Qrly">0</td>
-                        </tr>
-                        <tr>
-                            <td>REN<img src="assets/CryptoIcons/RENICON.png"></td>
-                            <td id="REN">0</td>
-                            <td id="$ren">0</td>
-                            <td id="Qren">0</td>
-                        </tr>
-                        <tr>
-                            <td>TRU<img src="assets/CryptoIcons/TRUICON.png"></td>
-                            <td id="TRU">0</td>
-                            <td id="$tru">0</td>
-                            <td id="Qtru">0</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="totalParent">
-                <h2>Total Value<p id="totalValue"></p></h2>
-                </div>
-        </div>
-        <div class="chartParent">
-            <!--this is a test chart-->
-            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-            <script>
-            var xValues = [1,2,3,4,5,6,7];
-            var yValues = [5000,4500,3000,5000,10000];
+    <nav>
+        <div class="navbar">
+            <h1><a href="./index.html">./Liesenfelt.code</a></h1>
+            <span><button><a href="https://github.com/dliesenfelt">Github<img src="./assets/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="github logo"></a></button></span>
+            <span<button><a href="">Resume</a></button></span>
 
-            new Chart("myChart", {
-            type: "line",
-            data: {
-                labels: xValues,
-                datasets: [{
-                fill: false,
-                lineTension: 0,
-                backgroundColor: "black",
-                borderColor: "black",
-                data: yValues
-            }]
-            },
-                options: {
-                legend: {display: false},
-                scales: {
-                yAxes: [{ticks: {min: 0, max:50000}}],
-                }}
-            });
-            </script>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="column" id="about">
+                <h2>About Me</h2>
+                <img src="">
+                <h2>Dylan Liesenfelt</h2>
+                <p>blah blah blah</p>
+            </div>
+            <div class="column" id="contact">
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>Phone:</li>
+                        <li>E-Mail:</li>
+                    </ul>
+                </div>
+                <h3>Project</h3>
+                <div>
+                    link to project
+                </div>
+                <div>
+                    link to project
+                </div>
+                <div>
+                    link to project
+                </div>
+            </div>
         </div>
     </main>
-    <script src="index.js"></script>
+    <footer>
+        <h3>Helpful Links</h3>
+        <hr>
+        <ul>
+            <li><a href="">W3School</a></li>
+            <li><a href="">stackoverflow</a></li>
+        </ul>
+    </footer>
 </body>
-<hr>
-<footer>
-    <a href="mailto:liesenfelt.code@gmail.com?">liesenfelt.code@gmail.com</a>
-    <br>
-    <a href='https://www.freepik.com/vectors/background'>Background vector created by starline - www.freepik.com</a>
-</footer>
 </html>
